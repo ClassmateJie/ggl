@@ -1,0 +1,60 @@
+{
+  "name": "popular-card",
+  "version": "1.1.0",
+  "description": "Hey, hey, hey",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "deploy": "",
+    "prepare": "husky install",
+    "release": "node scripts/release.js",
+    "commitlint": "node scripts/verify-commit.js"
+  },
+  "dependencies": {
+    "@types/sql.js": "^1.4.3",
+    "axios": "^0.27.2",
+    "sql.js": "^1.7.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.16"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.17.1",
+    "@types/estree": "^0.0.52",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/compiler-sfc": "^3.2.37",
+    "chalk": "^5.0.1",
+    "enquirer": "^2.3.6",
+    "eslint": "^8.18.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "execa": "^6.1.0",
+    "husky": "^8.0.1",
+    "less": "^4.1.3",
+    "minimist": "^1.2.6",
+    "semver": "^7.3.7",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.13",
+    "vue-tsc": "^0.38.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuchunhui/popular-card.git"
+  },
+  "keywords": [
+    "popular",
+    "hey",
+    "card",
+    "scratch"
+  ],
+  "author": "fuchunhui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuchunhui/popular-card/issues"
+  },
+  "homepage": "https://github.com/fuchunhui/popular-card#readme"
+}
