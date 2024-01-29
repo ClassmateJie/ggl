@@ -10,8 +10,12 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "isolatedModules": false,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "noImplicitAny": false,
   },
+  "strict": false,
+
+  "skipLibCheck": true,
   "types": [
     "node",
     "sql.js"

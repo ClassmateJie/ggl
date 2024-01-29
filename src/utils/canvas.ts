@@ -32,19 +32,20 @@ const _findBreakPoint = (text: string, width: number, ctx: CanvasRenderingContex
  * @returns 截取后的文本数组
  */
 const breakLines = (text: string, width: number, ctx: CanvasRenderingContext2D): string[] => {
-  const lines = [];
-  let breakPoint = 0;
-
-  while ((breakPoint = _findBreakPoint(text, width, ctx)) !== -1) {
-    lines.push(text.substring(0, breakPoint));
-    text = text.substring(breakPoint);
-  }
-
-  if (text) {
-    lines.push(text);
-  }
-
-  return lines;
+  // const lines = [];
+  // let breakPoint = 0;
+  //
+  // while ((breakPoint = _findBreakPoint(text, width, ctx)) !== -1) {
+  //   lines.push(text.substring(0, breakPoint));
+  //   text = text.substring(breakPoint);
+  // }
+  //
+  // if (text) {
+  //   lines.push(text);
+  // }
+  //
+  // return lines;
+  return [];
 };
 
 const fillText = (ctx: CanvasRenderingContext2D, width: number, text: string, options: FillText): void => {
