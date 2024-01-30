@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue';
-import {PopularButton} from '../components/common';
-import {getRandomImage} from '../db/data';
+
 import {FillText, Story, Point} from '../types';
 import {fillText} from '../utils/canvas';
-import {download} from '../utils/download';
-import {BLOG_URL, TOP_IMAGE} from '../config/index';
+
 
 const cardCanvas = ref<HTMLCanvasElement | null>(null);
 const containerRef = ref<HTMLCanvasElement | null>(null);
@@ -176,21 +174,6 @@ const hiddlePercent = () => {
   }
 };
 
-const refresh = () => {
-  resetData();
-  setStory();
-  makeLayer();
-};
-const save = () => {
-  const suffix = new Date().getTime().toString().slice(-6);
-  download(canvas, 'png', `福虎生威_${suffix}`);
-};
-const encourage = () => {
-  window.open(BLOG_URL);
-};
-const comment = () => {
-  window.open(`${BLOG_URL}#comment`);
-};
 
 const setData = () => {
   mobile = /Android|webOS|iPhone|iPod|iPad|BlackBerry|SymbianOS/.test(navigator.userAgent);

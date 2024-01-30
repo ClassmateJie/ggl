@@ -14,11 +14,9 @@
     "noImplicitAny": false,
   },
   "strict": false,
-
   "skipLibCheck": true,
   "types": [
-    "node",
-    "sql.js"
+    "node"
   ],
   "paths": {
     "*": ["*", "src/*"],

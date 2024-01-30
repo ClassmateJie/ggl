@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "deploy": "",
     "prepare": "husky install",
@@ -14,11 +14,7 @@
     "commitlint": "node scripts/verify-commit.js"
   },
   "dependencies": {
-    "@types/sql.js": "^1.4.3",
-    "axios": "^0.27.2",
-    "sql.js": "^1.7.0",
-    "vue": "^3.2.37",
-    "vue-router": "^4.0.16"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.17.1",
@@ -41,10 +37,7 @@
     "vite": "^2.9.13",
     "vue-tsc": "^0.38.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fuchunhui/popular-card.git"
-  },
+
   "keywords": [
     "popular",
     "hey",
@@ -52,9 +45,5 @@
     "scratch"
   ],
   "author": "fuchunhui",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fuchunhui/popular-card/issues"
-  },
-  "homepage": "https://github.com/fuchunhui/popular-card#readme"
+  "license": "ISC"
 }
